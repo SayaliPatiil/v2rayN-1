@@ -114,6 +114,11 @@
         public static int statePort { get; set; }
         public static Job processJob { get; set; }
         public static bool ShowInTaskbar { get; set; }
+        
+        
+        
+        
+        
         public static string ExePathKey { get; set; }
 
         #endregion
