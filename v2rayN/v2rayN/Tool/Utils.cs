@@ -106,9 +106,7 @@ namespace v2rayN
                 return default;
             }
             
-            catch
-            {
-            }
+            
         }
         }
 
@@ -173,6 +171,16 @@ namespace v2rayN
                 result = -1;
             }
             return result;
+        }
+    
+    public static void Dump(this Exception exc)
+        {
+            try
+            {
+                exc.StackTrace.Dump();
+                exc.Message.Dump();
+            }
+            catch { }
         }
 
         public static JObject ParseJson(string strJson)
