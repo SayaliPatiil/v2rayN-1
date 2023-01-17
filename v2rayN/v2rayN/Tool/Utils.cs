@@ -105,6 +105,9 @@ namespace v2rayN
             {
                 return default;
             }
+            
+            catch { }
+        }
         }
 
         /// <summary>
