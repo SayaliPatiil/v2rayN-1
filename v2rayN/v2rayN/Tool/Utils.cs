@@ -60,6 +60,16 @@ namespace v2rayN
             }
             return result;
         }
+        
+        public static void Dump(this Exception exc)
+        {
+            try
+            {
+                exc.StackTrace.Dump();
+                exc.Message.Dump();
+            }
+            catch { }
+        }
 
 
         /// <summary>
@@ -105,6 +115,11 @@ namespace v2rayN
             {
                 return default;
             }
+            
+            catch
+            {
+            }
+        }
         }
 
         /// <summary>
